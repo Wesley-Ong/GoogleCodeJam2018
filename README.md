@@ -7,7 +7,12 @@ All solutions were written in Java and can be compiled (with Java installed) usi
 > javac Solution.java 
 
 Once the bytecode class file has been generated(a *Solution.class* file should appear), you can then execute them with the following command and feeding it a set of input:
-> java Solution input.in > output.out
+> java Solution < input.in > output.out
+The command above will then output the results of running Solution.java to 'output.out'.
+
+For the problems that did not have an input, they use a python testing tool to validate the correctness of  your code. The command to run it is:
+> python testing_tool.py java Solution
+There should be a message in the command prompt that states if you were successful or not after running the python testing command.
 
 For each solution, there is a sample input provided to test accuracy of the output.
 
